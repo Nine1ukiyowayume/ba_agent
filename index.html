@@ -162,7 +162,7 @@ a { color: inherit; text-decoration: none; }
 .cards-wrap { max-width: 1200px; margin: 0 auto; padding: 32px 24px 80px; }
 .cards {
  display: grid;
- grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+ grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
  gap: 20px;
 }
 .card {
@@ -173,6 +173,7 @@ a { color: inherit; text-decoration: none; }
  display: flex; flex-direction: column;
  overflow: hidden;
  position: relative;
+ min-height: 461px;
 }
 .card::before {
  content: ''; position: absolute; inset: 0; pointer-events: none;
